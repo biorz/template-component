@@ -1,8 +1,8 @@
 {
-  "name": "template-component",
-  "version": "0.2.46",
+  "name": "@biorz/image-view",
+  "version": "0.1.0",
   "description": "A Component Template for Vue.js.",
-  "main": "lib/ymm-design.common.js",
+  "main": "lib/image-view.common.js",
   "files": [
     "lib",
     "src",
