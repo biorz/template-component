@@ -1,0 +1,4 @@
+{
+  "demo": "./package/demo/index.js",
+  "image-view": "./packages/image-view/index.js"
+}
