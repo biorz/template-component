@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const pkg = require('../package.json');
 
 const config = require('./config');
 
@@ -11,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: 'ymm-design.common.js',
+    filename: `${pkg.name}.common.js`,
     chunkFilename: '[id].js',
     libraryTarget: 'umd'
   },

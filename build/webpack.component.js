@@ -3,11 +3,10 @@ const webpack = require('webpack');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 const Components = require('../components.json');
-const ComponentsBiz = require('../components-biz.json');
 const config = require('./config');
 
 const webpackConfig = {
-  entry: Object.assign({}, Components, ComponentsBiz),
+  entry: Object.assign({}, Components),
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
