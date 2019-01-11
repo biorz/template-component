@@ -1,58 +1,37 @@
 {
-  "name": "@biorz/image-view",
+  "name": "@ymm-ui/<=name>",
   "version": "0.1.0",
-  "description": "A Component Template for Vue.js.",
-  "main": "lib/image-view.common.js",
+  "description": "<=description>",
+  "main": "lib/<=name>.common.js",
   "files": [
     "lib",
     "src",
     "packages"
   ],
-  "typings": "types/index.d.ts",
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "build:file": "node build/bin/build-entry.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
-    "dev": "npm run bootstrap && npm run build:file && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js & node build/bin/template.js",
-    "dev:play": "npm run build:file && cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
-    "dist": "npm run clean && npm run build:file && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
+    "dev": "npm run bootstrap && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js",
+    "dev:play": "cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
+    "dist": "npm run clean && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
     "lint": "eslint src/**/* test/**/* packages/**/* build/**/* --quiet",
     "lint:fix": "eslint src/**/* ./packages/**/*.vue ./packages/**/*.js ./examples/components/* --fix ",
     "pub": "npm run bootstrap && sh build/git-release.sh && sh build/release.sh",
     "pub:next": "npm run dist && npm publish --tag next",
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
-    "test:watch": "karma start test/unit/karma.conf.js"
+    "test:watch": "karma start test/unit/karma.conf.js",
+    "debug": "node ./debug.js"
   },
-  "faas": {
-    "domain": "element",
-    "public": "temp_web/element"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
-  },
-  "homepage": "http://element.eleme.io",
   "keywords": [
     "eleme",
     "vue",
     "components"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
-  },
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
-    "async-validator": "~1.8.1",
-    "cropperjs": "^1.4.3",
-    "deepmerge": "^1.2.0",
-    "image-compressor.js": "^1.1.4",
-    "normalize-wheel": "^1.0.1",
-    "resize-observer-polyfill": "^1.5.0",
-    "throttle-debounce": "^1.0.1",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3"
+    "@babel/runtime": "^7.1.5"
   },
   "peerDependencies": {
     "vue": "^2.5.2"
@@ -81,15 +60,11 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-json": "^1.2.0",
+    "execa": "^1.0.0",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
     "file-save": "^0.2.0",
     "gh-pages": "^0.11.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-postcss": "^6.1.1",
-    "gulp-sass": "^3.1.0",
     "highlight.js": "^9.3.0",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
