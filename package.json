@@ -1,8 +1,8 @@
 {
-  "name": "@ymm-ui/<=name>",
+  "name": "@ymm-ui/image-view",
   "version": "0.1.0",
   "description": "<=description>",
-  "main": "lib/<=name>.common.js",
+  "main": "lib/image-view.common.js",
   "files": [
     "lib",
     "src",
@@ -13,9 +13,10 @@
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
     "dev": "npm run bootstrap && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js",
     "dev:play": "cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
-    "dist": "npm run clean && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
+    "dist": "npm run clean && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js",
     "lint": "eslint src/**/* test/**/* packages/**/* build/**/* --quiet",
     "lint:fix": "eslint src/**/* ./packages/**/*.vue ./packages/**/*.js ./examples/components/* --fix ",
+    "page": "cross-env NODE_ENV=development webpack --config build/webpack.demo.js",
     "pub": "npm run bootstrap && sh build/git-release.sh && sh build/release.sh",
     "pub:next": "npm run dist && npm publish --tag next",
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
@@ -34,7 +35,8 @@
     "@babel/runtime": "^7.1.5"
   },
   "peerDependencies": {
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "@ymm-design/core": "^0.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
