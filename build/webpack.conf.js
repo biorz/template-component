@@ -14,7 +14,7 @@ module.exports = {
     filename: 'index.js',
     chunkFilename: '[id].js',
     libraryTarget: 'umd',
-    library: 'ELEMENT',
+    library: 'YMM',
     umdNamedDefine: true
   },
   resolve: {
