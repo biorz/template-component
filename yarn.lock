@@ -555,6 +555,20 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ymm-design/core@^0.3.0":
+  version "0.3.5"
+  resolved "http://192.168.199.131:4873/@ymm-design%2fcore/-/core-0.3.5.tgz#5297941dee5b2b50170f056184cc4d998a99bc2c"
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    async-validator "~1.8.1"
+    babel-helper-vue-jsx-merge-props "^2.0.3"
+    cropperjs "^1.4.3"
+    deepmerge "^1.2.0"
+    image-compressor.js "^1.1.4"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.0"
+    throttle-debounce "^1.0.1"
+
 CSSselect@~0.4.0:
   version "0.4.1"
   resolved "http://192.168.199.131:4873/CSSselect/-/CSSselect-0.4.1.tgz#f8ab7e1f8418ce63cda6eb7bd778a85d7ec492b2"
@@ -1877,9 +1891,13 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "http://192.168.199.131:4873/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.1.0, core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.0:
+core-js@^2.1.0, core-js@^2.2.0, core-js@^2.5.0:
   version "2.5.7"
   resolved "http://192.168.199.131:4873/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+
+core-js@^2.4.0:
+  version "2.6.2"
+  resolved "http://192.168.199.131:4873/core-js/-/core-js-2.6.2.tgz#267988d7268323b349e20b4588211655f0e83944"
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -8753,17 +8771,3 @@ yargs@~3.10.0:
 yeast@0.1.2:
   version "0.1.2"
   resolved "http://192.168.199.131:4873/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
-
-ymm-design@^0.2.46:
-  version "0.2.46"
-  resolved "http://192.168.199.131:4873/ymm-design/-/ymm-design-0.2.46.tgz#0ef80b0f97f850bdd67c57a54277155dc0e12864"
-  dependencies:
-    "@babel/runtime" "^7.1.5"
-    async-validator "~1.8.1"
-    babel-helper-vue-jsx-merge-props "^2.0.3"
-    cropperjs "^1.4.3"
-    deepmerge "^1.2.0"
-    image-compressor.js "^1.1.4"
-    normalize-wheel "^1.0.1"
-    resize-observer-polyfill "^1.5.0"
-    throttle-debounce "^1.0.1"

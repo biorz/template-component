@@ -1,7 +1,7 @@
 {
-  "name": "@ymm-ui/image-view",
+  "name": "@ymm-design/image-view",
   "version": "0.1.0",
-  "description": "<=description>",
+  "description": "vue component template",
   "main": "lib/image-view.common.js",
   "files": [
     "lib",
@@ -24,16 +24,13 @@
     "debug": "node ./debug.js"
   },
   "keywords": [
-    "eleme",
     "vue",
     "components"
   ],
   "license": "MIT",
   "unpkg": "lib/index.js",
-  "style": "lib/theme-chalk/index.css",
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
-    "ymm-design": "^0.2.46"
+    "@babel/runtime": "^7.1.5"
   },
   "peerDependencies": {
     "@ymm-design/core": "^0.3.0",
@@ -46,6 +43,7 @@
     "@babel/plugin-transform-arrow-functions": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
+    "@ymm-design/core": "^0.3.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-transform-vue-jsx": "^4.0.1",

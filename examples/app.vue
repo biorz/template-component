@@ -1,3 +1,21 @@
+<template>
+  <div id="app">
+    <docs/>
+  </div>
+</template>
+
+<script>
+  /* eslint-disable */
+  import docs from './docs/image-view.md'
+
+  export default {
+    name: 'app',
+    components: {
+      docs
+    },
+  };
+</script>
+
 <style lang="css">
   @import 'highlight.js/styles/color-brewer.css';
   @import 'assets/styles/common.css';
@@ -17,6 +35,7 @@
   }
 
   #app {
+    padding: 20px;
     height: 100%;
 
     @when component {
@@ -223,24 +242,3 @@
     }
   }
 </style>
-
-<template>
-  <div id="app">
-    <docs/>
-  </div>
-</template>
-
-<script>
-  /* eslint-disable */
-  import docs from './docs.md'
-
-  export default {
-    name: 'app',
-    components: {
-      docs
-    },
-    mounted() {
-      this.$imageview({images: ['url'], index: 0})
-    }
-  };
-</script>

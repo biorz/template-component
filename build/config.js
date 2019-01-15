@@ -14,7 +14,7 @@ exports.alias = {
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
-  'ymm-design': path.resolve(__dirname, '../')
+  root: path.resolve(__dirname, '../')
 };
 
 exports.vue = {
