@@ -6,7 +6,7 @@
 
 <script>
   /* eslint-disable */
-  import docs from './docs/image-view.md'
+  import docs from './docs/index.md'
 
   export default {
     name: 'app',

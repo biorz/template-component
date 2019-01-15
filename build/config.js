@@ -11,6 +11,7 @@ externals = [Object.assign({
 exports.externals = externals;
 
 exports.alias = {
+  src: path.resolve(__dirname, '../src'),
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),

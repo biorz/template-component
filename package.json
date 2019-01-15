@@ -1,8 +1,8 @@
 {
-  "name": "@ymm-design/image-view",
+  "name": "@ymm-design/<=name>",
   "version": "0.1.0",
-  "description": "vue component template",
-  "main": "lib/image-view.common.js",
+  "description": "<=description>",
+  "main": "lib/<=name>.common.js",
   "files": [
     "lib",
     "src",
@@ -30,7 +30,8 @@
   "license": "MIT",
   "unpkg": "lib/index.js",
   "dependencies": {
-    "@babel/runtime": "^7.1.5"
+    "@babel/runtime": "^7.1.5",
+    "istanbul-instrumenter-loader": "^3.0.1"
   },
   "peerDependencies": {
     "@ymm-design/core": "^0.3.0",
