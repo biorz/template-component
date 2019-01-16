@@ -1,4 +1,4 @@
-import { createVue } from '../util';
+import { createVue, destroyVM } from '../util';
 import demo from 'src/index';
 import Vue from 'Vue';
 
@@ -7,7 +7,7 @@ describe('ImageView', () => {
   Vue.use(demo);
 
   afterEach(() => {
-    // destroyVM(vm);
+    destroyVM(vm);
   });
 
   it('service', () => {

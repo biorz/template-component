@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
@@ -166,9 +165,6 @@ const webpackConfig = {
       filename: './index.html',
       favicon: './examples/favicon.ico'
     }),
-    new CopyWebpackPlugin([
-      { from: 'examples/versions.json' }
-    ]),
     new ProgressBarPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
