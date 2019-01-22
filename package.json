@@ -2,7 +2,7 @@
   "name": "@ymm-design/<=name>",
   "version": "0.1.0",
   "description": "<=description>",
-  "main": "lib/<=name>.common.js",
+  "main": "lib/@ymm-design/<=name>.common.js",
   "files": [
     "lib",
     "src",
