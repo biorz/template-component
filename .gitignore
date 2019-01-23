@@ -7,7 +7,6 @@ lerna-debug.log.*
 lib
 .idea
 .vscode
-examples/play/index.vue
 .npmrc
 coverage
 waiter.config.js
