@@ -296,7 +296,7 @@
         margin: 55px 0 20px;
       }
 
-      table {
+      table:not([class^="el-table"]) {
         border-collapse: collapse;
         width: 100%;
         background-color: #fff;
