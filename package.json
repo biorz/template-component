@@ -10,15 +10,11 @@
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "clean": "rimraf lib && rimraf test/**/coverage",
     "dev": "npm run bootstrap && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js",
-    "dev:play": "cross-env NODE_ENV=development PLAY_ENV=true webpack-dev-server --config build/webpack.demo.js",
     "dist": "npm run clean && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js",
     "lint": "eslint src/**/* test/**/* packages/**/* build/**/* --quiet",
     "lint:fix": "eslint src/**/* ./examples/components/* --fix",
-    "page": "cross-env NODE_ENV=development webpack --config build/webpack.demo.js",
-    "pub": "npm run bootstrap && sh build/git-release.sh && sh build/release.sh",
-    "pub:next": "npm run dist && npm publish --tag next",
     "test": "npm run lint && cross-env CI_ENV=/dev/ karma start test/unit/karma.conf.js --single-run",
     "test:watch": "karma start test/unit/karma.conf.js",
     "debug": "node ./debug.js"
