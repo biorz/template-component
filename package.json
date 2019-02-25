@@ -1,8 +1,8 @@
 {
-  "name": "@ymm-design/<=name>",
+  "name": "@ymm-design/name",
   "version": "0.1.0",
-  "description": "<=description>",
-  "main": "lib/@ymm-design/<=name>.common.js",
+  "description": "description",
+  "main": "lib/@ymm-design/name.common.js",
   "files": [
     "lib",
     "src",
@@ -26,8 +26,7 @@
   "license": "MIT",
   "unpkg": "lib/index.js",
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
-    "istanbul-instrumenter-loader": "^3.0.1"
+    "@babel/runtime": "^7.1.5"
   },
   "peerDependencies": {
     "@ymm-design/core": "^0.3.0",
@@ -44,6 +43,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-transform-vue-jsx": "^4.0.1",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "chai": "^3.5.0",
     "cheerio": "^0.18.0",
     "chokidar": "^1.7.0",
@@ -87,7 +87,6 @@
     "perspective.js": "^1.0.0",
     "postcss": "^5.1.2",
     "postcss-loader": "0.11.1",
-    "postcss-salad": "^1.0.8",
     "progress-bar-webpack-plugin": "^1.11.0",
     "rimraf": "^2.5.4",
     "sass": "^1.14.3",

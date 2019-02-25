@@ -1,4 +1,5 @@
 import component from './component';
+import './index.scss';
 
 /**
  * support Vue.use

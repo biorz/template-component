@@ -1,6 +1,5 @@
 var path = require('path');
 var nodeExternals = require('webpack-node-externals');
-var saladConfig = require('./salad.config.json');
 
 var externals = {};
 
@@ -28,11 +27,4 @@ exports.vue = {
 
 exports.jsexclude = /node_modules|utils\/popper\.js|utils\/date.\js/;
 
-exports.postcss = function(webapck) {
-  saladConfig.features.partialImport = {
-    addDependencyTo: webapck
-  };
-  return [
-    require('postcss-salad')(saladConfig)
-  ];
-};
+exports.postcss = function(webapck) { return []; };
