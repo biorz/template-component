@@ -1,8 +1,8 @@
 {
-  "name": "@ymm-design/name",
+  "name": "@ymm-design/<=name>",
   "version": "0.1.0",
-  "description": "description",
-  "main": "lib/@ymm-design/name.common.js",
+  "description": "<=description>",
+  "main": "lib/@ymm-design/<=name>.common.js",
   "files": [
     "lib",
     "src",
