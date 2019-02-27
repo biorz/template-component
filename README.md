@@ -7,25 +7,14 @@
 ## 使用
 ``` javascript
 import Vue from 'vue'
-import Ymm from 'ymm-design'
-import 'ymm-design/lib/theme-default/index.css'
+import Ymm from '@ymm-design/core'
+import '@ymm-design/core/lib/theme-default/index.css'
 
 Vue.use(Ymm)
 ```
 
 ## 开发
-- `npm run dev` - localhost:8085
-
-- `npm run dev:play`
-
-- 新增组件
-  - 在`./package/`中创建组件
-  - 在`./package/theme-default`中创建样式
-  - 在`./components.json`中注册
-  - 在`./example/nav.config.js`中配置路由
-  - 在`./example/docs/zh-CN`中编写文档
-
-- `node build/bin/new [组件名]` - 自动生成以上文件
+`npm run dev` - localhost:8085
 
 ## 发布
 `npm run pub`
@@ -38,5 +27,7 @@ Vue.use(Ymm)
 
 `npm run test:watch`
 
-## 代办事项
-- [ ] ts
+## 编写示例
+```html @preview
+  <demo></demo>
+```
