@@ -1,16 +1,4 @@
 {
   "presets": [["@babel/preset-env", { "loose": true }]],
-  "plugins": ["@babel/plugin-transform-runtime", "transform-vue-jsx"],
-  "env": {
-    "utils": {
-      "plugins": [
-        ["module-resolver", {
-          "root": ["ymm-design"],
-          "alias": {
-            "ymm-design/src": "ymm-design/lib"
-          }
-        }]
-      ]
-    }
-  }
+  "plugins": ["@babel/plugin-transform-runtime", "transform-vue-jsx"]
 }

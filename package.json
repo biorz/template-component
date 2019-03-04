@@ -41,7 +41,6 @@
     "@babel/preset-env": "^7.1.6",
     "@ymm-design/core": "^0.3.0",
     "babel-loader": "^8.0.4",
-    "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-transform-vue-jsx": "^4.0.1",
     "istanbul-instrumenter-loader": "^3.0.1",
     "chai": "^3.5.0",

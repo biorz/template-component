@@ -1,7 +1,8 @@
-examples/play
 *.sh
 node_modules
+build
 lib
+test
 coverage
 *.md
 *.scss
